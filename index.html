@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dynamic Resume Builder</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <h2>Personal Information</h2>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+
+            <h2>Experience</h2>
+            <div id="experienceContainer">
+                <div class="experience">
+                    <input type="text" placeholder="Job Title" required>
+                    <input type="text" placeholder="Company Name" required>
+                    <input type="text" placeholder="Years (e.g., 2020 - 2023)" required>
+                </div>
+            </div>
+            <button type="button" id="addExperience">Add More Experience</button>
+
+            <h2>Education</h2>
+            <input type="text" id="education" placeholder="Degree and Institution" required>
+
+            <h2>Skills</h2>
+            <input type="text" id="skills" placeholder="Comma-separated skills" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+        <div id="resumeOutput" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
